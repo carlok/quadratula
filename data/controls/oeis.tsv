@@ -1,0 +1,9 @@
+column	oeis	offset	terms	name
+all	A057991	0	1,1,1,5,35,1411,1130531	Number of quasigroups of order n (up to isomorphism)
+latin_squares	A002860	1	1,2,12,576,161280,812851200	Number of Latin squares of order n; or labeled quasigroups
+groups	A000001	0	0,1,1,1,2,1,2	Number of groups of order n
+abelian_groups	A000688	1	1,1,1,2,1,1	Number of Abelian groups of order n
+commutative	A057992	0	1,1,1,3,7,11,491	Number of commutative quasigroups of order n
+semisymmetric	A076017	1	1,1,2,3,4,9,41,595,26620	Nonisomorphic systems with one binary operation satisfying B(AB)=A
+totally_symmetric	A076019	1	1,1,2,2,1,3	Nonisomorphic commutative systems satisfying B(AB)=A
+idempotent	A058175	diagonal	1,1,0,1,1,4,18	Triangle T(n,k), quasigroups of order n with k idempotents; the terms are T(n,n) for n=0..6

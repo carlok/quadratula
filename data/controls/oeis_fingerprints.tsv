@@ -1,0 +1,12 @@
+counts_order1_6	classes	oeis	name	retrieved
+1,1,2,2,1,3	Sch-24	A076019	Number of nonisomorphic commutative systems with n elements with one binary operation satisfying the equation B(AB)=A (totally-symmetric quasigroups). (3 hits scanned)	2026-09-13
+1,1,2,3,4,9	Sch-5,Sch-23	A076017	Number of nonisomorphic systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). (2 hits scanned)	2026-09-13
+1,1,2,3,4,9	Sch-5,Sch-23	A076018	Number of systems with n elements with one binary operation satisfying the equation B(AB)=A (semisymmetric quasigroups). Isomorphic systems and systems differing by a transposition have been omitted. (2 hits scanned)	2026-09-13
+1,1,2,6,5,2	Sch-4,Sch-34,Sch-56	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,2,7,10,64	Sch-2,Sch-100,Sch-140	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,3,4,2,5	Sch-18,Sch-88,Sch-156	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,3,5,5,13	Sch-264,Sch-336,Sch-504	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,3,6,6,13	Sch-29,Sch-93,Sch-183	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,3,6,8,16	Sch-103,Sch-127,Sch-161	-	no quasigroup-related entry (0 hits scanned)	2026-09-13
+1,1,3,7,11,491	Sch-1,Sch-6,Sch-12	A057992	Number of commutative quasigroups of order n. (1 hits scanned)	2026-09-13
+1,1,5,17,85,4003	Sch-408,Sch-432,Sch-654	-	no quasigroup-related entry (0 hits scanned)	2026-09-13

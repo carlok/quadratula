@@ -1,0 +1,6 @@
+order	1	iso_classes	1	sum_n!/aut	1	enumerate_seconds	0.00	signature_seconds	0.00	threads	11
+order	2	iso_classes	1	sum_n!/aut	2	enumerate_seconds	0.00	signature_seconds	0.00	threads	11
+order	3	iso_classes	5	sum_n!/aut	12	enumerate_seconds	0.00	signature_seconds	0.00	threads	11
+order	4	iso_classes	35	sum_n!/aut	576	enumerate_seconds	0.00	signature_seconds	0.00	threads	11
+order	5	iso_classes	1411	sum_n!/aut	161280	enumerate_seconds	0.00	signature_seconds	0.01	threads	11
+order	6	iso_classes	1130531	sum_n!/aut	812851200	enumerate_seconds	0.99	signature_seconds	6.13	threads	11

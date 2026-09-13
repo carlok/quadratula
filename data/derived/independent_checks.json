@@ -1,0 +1,740 @@
+{
+ "cover": {
+  "class_non_implications": 1958,
+  "cover_order6": {
+   "claimed_universe": 1864,
+   "covered_non_implications": 1864,
+   "covers_an_implication": 0,
+   "members": 17,
+   "ok": true,
+   "signatures_not_closed_sets": 0
+  },
+  "full_cover": {
+   "covered_non_implications": 1958,
+   "covers_an_implication": 0,
+   "members": 17,
+   "ok": true,
+   "orders": [
+    3,
+    4,
+    5,
+    6,
+    8,
+    9
+   ],
+   "signatures_not_closed_sets": 0
+  }
+ },
+ "models": {
+  "all_found": true,
+  "pairs": 94,
+  "rows": [
+   {
+    "a": 23,
+    "b": 5,
+    "order": 9,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 23,
+    "b": 29,
+    "order": 9,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 23,
+    "b": 93,
+    "order": 9,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 23,
+    "b": 183,
+    "order": 9,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 1,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 2,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 3,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 4,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 5,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 6,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 7,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 8,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 9,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 10,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 12,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 14,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 15,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 18,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 20,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 23,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 24,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 25,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 29,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 34,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 54,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 56,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 60,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 65,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 79,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 88,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 93,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 100,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 101,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 103,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 105,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 123,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 127,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 140,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 156,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 161,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 183,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 202,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 224,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 264,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 336,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 408,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 432,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 504,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 38,
+    "b": 654,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 1,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 2,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 3,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 4,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 5,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 6,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 7,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 8,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 9,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 10,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 12,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 14,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 15,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 18,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 20,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 23,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 24,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 25,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 29,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 34,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 38,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 54,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 56,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 60,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 65,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 88,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 93,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 100,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 101,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 103,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 105,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 123,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 127,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 140,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 156,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 161,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 183,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 202,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 224,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 264,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 336,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 408,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 432,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 504,
+    "order": 8,
+    "witness_in_stored_models": true
+   },
+   {
+    "a": 79,
+    "b": 654,
+    "order": 8,
+    "witness_in_stored_models": true
+   }
+  ]
+ },
+ "sat": {
+  "all_ok": true,
+  "note": "Sch-5 implies Sch-29, Sch-93 and Sch-183, so Sch-23 with not Sch-5 unsatisfiable covers all four Sch-23 residual pairs; no model of Sch-38 or Sch-79 at all covers their pairs.",
+  "rows": [
+   {
+    "clauses": 32077,
+    "expected": "UNSAT",
+    "goal_violated": 1,
+    "hypotheses": [
+     253
+    ],
+    "kind": "control",
+    "ok": true,
+    "order": 5,
+    "result": "UNSAT",
+    "seconds": 1.5,
+    "variables": 250
+   },
+   {
+    "clauses": 95042,
+    "expected": "SAT",
+    "goal_violated": 1,
+    "hypotheses": [
+     253
+    ],
+    "kind": "control",
+    "model_rechecked": true,
+    "ok": true,
+    "order": 6,
+    "result": "SAT",
+    "seconds": 1.7,
+    "table": "134052305124543210012345250431421503",
+    "variables": 432
+   },
+   {
+    "clauses": 120884,
+    "expected": "UNSAT",
+    "goal_violated": null,
+    "hypotheses": [
+     38
+    ],
+    "kind": "claim",
+    "ok": true,
+    "order": 7,
+    "result": "UNSAT",
+    "seconds": 1.6,
+    "variables": 343
+   },
+   {
+    "clauses": 120884,
+    "expected": "UNSAT",
+    "goal_violated": null,
+    "hypotheses": [
+     79
+    ],
+    "kind": "claim",
+    "ok": true,
+    "order": 7,
+    "result": "UNSAT",
+    "seconds": 1.7,
+    "variables": 343
+   },
+   {
+    "clauses": 238534,
+    "expected": "UNSAT",
+    "goal_violated": 5,
+    "hypotheses": [
+     23
+    ],
+    "kind": "claim",
+    "ok": true,
+    "order": 7,
+    "result": "UNSAT",
+    "seconds": 10.2,
+    "variables": 686
+   },
+   {
+    "clauses": 529858,
+    "expected": "UNSAT",
+    "goal_violated": 5,
+    "hypotheses": [
+     23
+    ],
+    "kind": "claim",
+    "ok": true,
+    "order": 8,
+    "result": "UNSAT",
+    "seconds": 20.0,
+    "variables": 1024
+   },
+   {
+    "clauses": 529858,
+    "expected": "SAT",
+    "goal_violated": 1,
+    "hypotheses": [
+     38
+    ],
+    "kind": "claim",
+    "model_rechecked": true,
+    "ok": true,
+    "order": 8,
+    "result": "SAT",
+    "seconds": 0.1,
+    "table": "1765420345271630540173622043617563102457025637143672054171345026",
+    "variables": 1024
+   },
+   {
+    "clauses": 529858,
+    "expected": "SAT",
+    "goal_violated": 1,
+    "hypotheses": [
+     79
+    ],
+    "kind": "claim",
+    "model_rechecked": true,
+    "ok": true,
+    "order": 8,
+    "result": "SAT",
+    "seconds": 0.1,
+    "table": "1765420346731025320457610537241650213674641275302356014771406352",
+    "variables": 1024
+   },
+   {
+    "clauses": 1071875,
+    "expected": "SAT",
+    "goal_violated": 5,
+    "hypotheses": [
+     23
+    ],
+    "kind": "claim",
+    "model_rechecked": true,
+    "ok": true,
+    "order": 9,
+    "result": "SAT",
+    "seconds": 2.2,
+    "table": "157438602240875136728641350314256087683504271801367425476023518532710864065182743",
+    "variables": 1458
+   }
+  ],
+  "status": "ran",
+  "time_limit_seconds": 7200
+ }
+}

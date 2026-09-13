@@ -1,0 +1,18 @@
+quadratula
+Copyright 2026 Carlo Perassi
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+This product includes code adapted from parsimagma
+(https://github.com/carlok/parsimagma, commit 2a75a1b), Copyright 2026 Carlo
+Perassi, Apache License 2.0:
+  - src/sig.rs         vendored with documentation changes
+  - src/enumerate.rs   `permutations` and the lexicographic canonicity test
+
+This product redistributes, unmodified, the ancillary files of
+  Bruno Le Floch, "Implication semilattice of 990 quasigroup equational laws",
+  arXiv:2603.29909v1 (31 March 2026), licensed CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/).
+The files are in data/lefloch/; source URLs and SHA-256 digests are in
+data/lefloch/PROVENANCE.txt. All implication and equivalence data used as
+ground truth in this project is Le Floch's.

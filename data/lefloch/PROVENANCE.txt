@@ -1,0 +1,17 @@
+Source: Bruno Le Floch, "Implication semilattice of 990 quasigroup equational laws",
+arXiv:2603.29909v1 [math.RA], 31 March 2026. License: CC BY 4.0.
+Ancillary files fetched unmodified from https://arxiv.org/src/2603.29909v1/anc/<file>
+Retrieved: 2026-09-13
+
+sha256  bytes  file
+0962f0af85b735a0652fb948e5ccd10f2f8b7672107d1db4906cb9234a4cc9f3  3135  ATP_utils_quasigroup.py
+a37eb7b8333bfc4611dcaac9917a22bdcc67127155b5cd1a40dba20ac125e65c  6949  Schroeder_conjunctions.py
+89b0e40b54ddc25786391e14705e695c0a2b7fb9a9542b77db1ad086d73f3dd9  1838  Schroeder_equations.py
+ad2d927af4d745ed12755edd05b62a603f6a163339d795a64a97e57224908b01  10348  Schroeder_implications.py
+03c0551dec935ed6d705455519f8b1e6761f2e7e0a5bd108e914568cfce412b4  5510  quasigroup-classes.txt
+2bc99a2569ba5acc49f0b383db204ebc839559b5fffbe89bec738e30de445a1e  37182  quasigroup-equations.txt
+1f08e72ed1d554bb911a5ae5c1c8c639c21f2db827b05409222514f8eb3772be  3040  quasigroup-implications.txt
+3eef1590af98381e28ce88ae8752c059d99b94f2795e1062684e4eede9d60a40  1694  quasigroup-representatives.txt
+3e5e7eede5f0526eaa31b473dfff9c15fdb49011c025cd3f081d0cd69ccee5a5  14539  quasigroup_eq_to_long_class.json
+b527a38fde4dce1966e2c83fcd1b0ee832b7ec5dda09ccf3606724b51d2ca604  20283  quasigroup_long_classes.json
+3619bf1246d5b62d700b5e139b05fb548ca65e3d8620e87389920401265ad8b7  34120  quasigroup_long_classes.py

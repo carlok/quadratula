@@ -1,0 +1,6 @@
+sigma	012	mapped	990	bijection	true	ops	*->* //->// \\->\\
+sigma	120	mapped	990	bijection	true	ops	*->\\ //->* \\->//
+sigma	201	mapped	990	bijection	true	ops	*->// //->\\ \\->*
+sigma	102	mapped	990	bijection	true	ops	*->*(swapped) //->\\(swapped) \\->//(swapped)
+sigma	021	mapped	990	bijection	true	ops	*->\\(swapped) //->//(swapped) \\->*(swapped)
+sigma	210	mapped	990	bijection	true	ops	*->//(swapped) //->*(swapped) \\->\\(swapped)

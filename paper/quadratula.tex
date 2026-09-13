@@ -1,0 +1,266 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=2.7cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage[
+  colorlinks=true,
+  linkcolor={blue!55!black},
+  citecolor={green!40!black},
+  urlcolor={blue!65!black},
+  pdftitle={Small quasigroups and the implication semilattice of Schroeder's 990 laws},
+  pdfauthor={Carlo Perassi},
+  pdfkeywords={quasigroups, Latin squares, equational theories, varieties, finite models},
+]{hyperref}
+\usepackage[capitalise,noabbrev]{cleveref}
+\urlstyle{same}
+
+\newcommand{\ldiv}{\mathbin{/\!/}}
+\newcommand{\rdiv}{\mathbin{\backslash\!\backslash}}
+\newcommand{\Sch}[1]{\textsf{Sch-#1}}
+\newcommand{\arxiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
+\newcommand{\oeis}[1]{\href{https://oeis.org/#1}{#1}}
+\newcommand{\doi}[1]{\href{https://doi.org/#1}{doi:#1}}
+\newcommand{\repo}{\url{https://github.com/carlok/quadratula}}
+\input{numbers.tex}
+
+\newtheorem{lemma}{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+\title{Small quasigroups and the implication semilattice\\ of Schröder's 990 laws}
+\author{Carlo Perassi}
+\date{Draft, \today}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Le Floch~\cite{lefloch} determined all implications among Schröder's \NLaws{}
+quasigroup laws: \NClasses{} equivalence classes and \NVarieties{} closed sets. We
+measure how much of this structure is witnessed by quasigroups of small order.
+Quasigroups of order at most 4 witness \ClassSatFour{} of the non-implications
+between classes, and those of order at most 6 witness \ClassSatSix{} and realise
+\VarSix{} of the \NVarieties{} closed sets. Exhaustive search over the models of the
+remaining laws and closed sets extends the picture exactly: quasigroups of order at
+most \CompleteUpTo{} witness \ClassSatNine{} of the non-implications and realise
+\VarNine{} closed sets, with least witness orders up to \WitTwentyThree. A set of
+\FullCover{} quasigroups witnesses every non-implication between classes and, given
+Le Floch's list of closed sets, no smaller set of quasigroups of any order does.
+Code and data: \href{https://github.com/carlok/quadratula}{github.com/carlok/quadratula}.
+\end{abstract}
+
+\noindent\textbf{Keywords:} quasigroups, Latin squares, equational laws, varieties,
+finite models.\\
+\textbf{MSC 2020:} 20N05, 08B05.
+
+\section{Introduction}
+
+Schröder~\cite{schroeder} considered the equations with three variables and two
+operations on each side, such as $x \circ_1 (y \circ_2 z) = \alpha \circ_3 (\beta
+\circ_4 \gamma)$, where each $\circ_i$ is independently one of the quasigroup
+operations $*, \ldiv, \rdiv$, either side may instead be bracketed as
+$(\cdot \circ \cdot) \circ \cdot$, and $(\alpha,\beta,\gamma)$ is a permutation of
+$(x,y,z)$. Le Floch~\cite{lefloch}, following the methods of the Equational Theories
+Project~\cite{etp}, determined all implications among the resulting \NLaws{} laws
+with Prover9 and Mace4~\cite{mccune}. He states that every non-implication has a
+finite countermodel, without giving their orders.
+
+We measure, for each $k$, the part of this structure witnessed by quasigroups of
+order at most $k$: non-implications, separation of classes, and closed sets
+realised as intersections of signatures. Le Floch's result is the ground truth and
+is not revised.
+
+\section{Definitions}
+
+A quasigroup of order $n$ is a Latin square on $\{0,\dots,n-1\}$. Following
+\cite{lefloch}, $a \ldiv b$ is the $c$ with $c * a = b$, and $a \rdiv b$ is the $c$
+with $b * c = a$. For a quasigroup $Q$, $\operatorname{sig}(Q)$ is the set of laws
+$Q$ satisfies. $Q$ witnesses $A \not\Rightarrow B$ if $A \in \operatorname{sig}(Q)$
+and $B \notin \operatorname{sig}(Q)$.
+
+\begin{definition}\label{def:floor}
+The floor at order $k$ is the set of quasigroups of order at most $k$ up to
+isomorphism. A non-implication is witnessed at order $k$ if some quasigroup of the
+floor witnesses it. A closed set $V$ is realised at order $k$ if
+$V = \bigcap \{\operatorname{sig}(Q) : V \subseteq \operatorname{sig}(Q),\ |Q| \le k\}$,
+with the empty intersection equal to the set of all laws.
+\end{definition}
+
+Every signature is closed under consequence, including consequences of conjunctions,
+hence one of the \NVarieties{} closed sets listed by Le Floch. Equivalent laws have equal signatures, so the partition of laws by signature
+over a floor is coarser than or equal to the partition into classes.
+
+\begin{lemma}\label{lem:local}
+Whether $A \not\Rightarrow B$ is witnessed at order $k$ depends only on the models of
+$A$ of order at most $k$. Whether $V$ is realised at order $k$ depends only on the
+models of $V$ of order at most $k$, and a closed set realised at order $k$ is realised
+at every larger order.
+\end{lemma}
+\begin{proof}
+The first two claims follow from the definitions of witness and realisation
+(\cref{def:floor}). For the third, adding models of $V$ can only shrink the
+intersection, which always contains $V$.
+\end{proof}
+
+\section{Method}
+
+\paragraph{Enumeration.}
+Quasigroups of order $n \le 6$ are enumerated by backtracking over Latin squares,
+keeping the row-major lexicographically least table of each isomorphism class. Two
+necessary conditions for leastness prune the search: $T_{00} \le 1$, and row 0 is
+least among its conjugates by permutations fixing 0. Each law is checked on the
+$n^3$ assignments, stopping at the first failure. Order 6 takes \EnumSecsSix{}\,s to
+enumerate and \SigSecsSix{}\,s to evaluate on \Threads{} threads of an \CPU.
+
+\paragraph{Verification.}
+(i) The class counts \IsoOne, \IsoTwo, \IsoThree, \IsoFour, \IsoFive, \IsoSix{} match
+OEIS \oeis{A057991}~\cite{oeis}, and $\sum n!/|\mathrm{Aut}|$ equals the number of
+Latin squares (\oeis{A002860}) at each order. (ii) No floor quasigroup refutes a
+listed implication (\FalseRefSix{} cases), and every signature is a listed closed
+set. (iii) The counts of groups, abelian groups, commutative, semisymmetric, totally
+symmetric and idempotent quasigroups agree with OEIS (\oeis{A000001},
+\oeis{A000688}, \oeis{A057992}, \oeis{A076017}, \oeis{A076019}, diagonal of
+\oeis{A058175}):
+\GThreeAllMatch{} \GThreeCells{} values match. (iv) The six parastrophes map the law
+list to itself; the predicted permutation of signatures was checked on every Latin
+square of order at most \GFourMaxOrder{} (\GFourChecks{} bit comparisons,
+\GFourMismatches{} mismatches). (v) A separate script, with its own law parser and
+evaluator and reading Le Floch's files directly, re-checks \IndepCoversOk{} covers
+below and finds a witness of the stated least order for all \IndepModelPairs{} residual
+pairs of the Results section. SAT encodings solved with kissat confirm the least
+orders: \Sch{38} and \Sch{79} have no model of order 7, no model of \Sch{23} of order 7
+or 8 violates \Sch{5} (which implies \Sch{29}, \Sch{93} and \Sch{183}), and witnesses
+exist at orders 8 and 9, re-checked after decoding. Two queries on associativity and
+commutativity at orders 5 and 6 test the encoding. \SatAllOk{} \SatQueries{} queries
+give the expected answer, each within \SatMaxSeconds{}\,s.
+
+\paragraph{Beyond order 6.}
+By \cref{lem:local} it suffices to enumerate, at order $k$, the models of each
+closed set not realised at order $k-1$. This also covers witnessing: if
+$A \not\Rightarrow B$ is not witnessed at order $k-1$, then $B$ lies in every signature
+of order at most $k-1$ containing $A$, so the closed set generated by $A$ is not
+realised at order $k-1$ and its models of order $k$ are enumerated. Separation of
+classes follows from witnessing. The search fills cells row-major and prunes as soon
+as a required law fails on defined entries, with the same symmetry breaking and
+leastness test. With no laws, and with each of seven sample laws, it returns exactly
+the enumerated isomorphism classes at every order at most 5. As an external check,
+\Sch{5} is equivalent to semisymmetry~\cite{lefloch} and implies \Sch{23}; filtering
+the \Sch{23} runs by \Sch{5} gives \SemiSeven, \SemiEight{} and \SemiNine{}
+quasigroups at orders 7, 8 and 9, the values of \oeis{A076017}. The other runs have
+no such external count.
+
+\paragraph{Cover.}
+Minimum sets of quasigroups witnessing a given set of non-implications are computed
+as set-cover integer programs with HiGHS~\cite{highs}.
+
+\section{Results}
+
+\Cref{tab:results} gives the cumulative counts.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{rrrrr}
+\toprule
+$k$ & class non-impl.\ witnessed & share & classes separated & closed sets realised\\
+\midrule
+3 & \ClassWitThree & \ClassSatThree & \ClassesSepThree & \VarThree\\
+4 & \ClassWitFour & \ClassSatFour & \ClassesSepFour & \VarFour\\
+5 & \ClassWitFive & \ClassSatFive & \ClassesSepFive & \VarFive\\
+6 & \ClassWitSix & \ClassSatSix & \ClassesSepSix & \VarSix\\
+\midrule
+7 & \ClassWitSeven & \ClassSatSeven & \ClassesSepSeven & \VarSeven\\
+8 & \ClassWitEight & \ClassSatEight & \ClassesSepEight & \VarEight\\
+9 & \ClassWitNine & \ClassSatNine & \ClassesSepNine & \VarNine\\
+\bottomrule
+\end{tabular}
+\caption{Cumulative results for the floor at order $k$. Denominators: \ClassNonImp{}
+non-implications between classes, \NClasses{} classes, \NVarieties{} closed sets.
+Orders 1 and 2 witness nothing. A class is separated if no other class has the same
+signatures. Rows 7--9 come from the search justified by \cref{lem:local} and are
+exact up to order \CompleteUpTo.}
+\label{tab:results}
+\end{table}
+
+\paragraph{Small orders.}
+Counted over laws, the floor at order 4 witnesses \LawSatFour{} of the \LawNonImp{}
+non-implications, and the floor at order 6 \LawSatSix. The unique quasigroup of
+order 2 satisfies all laws. $\mathbb{Z}_3$ satisfies \ZThreeLaws{} laws and alone
+witnesses \ZThreeShare{} of the law non-implications.
+
+\paragraph{Residual.}
+At order 6, \UnrefSix{} class non-implications are unwitnessed, all with hypothesis
+\Sch{23}, \Sch{38} or \Sch{79}. Their least witnesses have order \WitThirtyEight{}
+(\Sch{38}), \WitSeventyNine{} (\Sch{79}) and \WitTwentyThree{} (\Sch{23}); Mace4 agrees
+for \MaceAgree{} of the \ResidualPairs{} pairs. Small quasigroups miss these pairs
+because the hypotheses have few models; for $n = 1, 2, \dots$ the model counts are
+\Sch{7}: \CountsSeven; \Sch{38}: \CountsThirtyEight; \Sch{5}: \CountsFive;
+\Sch{23}: \CountsTwentyThree. \Sch{7} implies \Sch{38}, so equal counts mean equal sets
+of models: up to order \SevenThirtyEightSameUpTo{} no quasigroup separates them.
+
+\paragraph{Closed sets.}
+Least realising order of the \NGenerators{} closed sets not realised at order 6:
+\VarLeastHist. Not realised at order at most \LastOrder: \MissingLastList.
+
+\paragraph{Covers.}
+The \CoverUniverse{} class non-implications witnessed at order at most 6 are
+witnessed by \CoverILP{} quasigroups (\CoverProfile), optimal among quasigroups of
+order at most 6; greedy uses \CoverGreedy{} and the LP bound is \CoverLP. For all
+\ClassNonImp{} class non-implications, the optimum among known signatures is
+\FullCover. An ILP over all \NVarieties{} closed sets as hypothetical signatures gives
+the lower bound \FullCoverLB, valid for quasigroups of any order provided Le Floch's
+list of closed sets is complete.
+
+\paragraph{Symmetry.}
+Under the parastrophes the \NLaws{} laws form \LawOrbits{} orbits, the classes
+\ClassOrbits, the closed sets \VarOrbits{} and the ordered class pairs
+\ClassPairOrbits.
+
+\paragraph{Model counts.}
+Counts of models by order for all classes and closed sets are in the repository. Of
+the \OeisSeqs{} distinct class count sequences for orders 1--6, searching OEIS for the
+terms together with ``quasigroup'', ``latin'' or ``loop'' finds \OeisMatched; for
+\OeisNone{} of them these searches return nothing.
+
+\section{Limitations}
+
+The ground truth is Le Floch's computation and is not re-proved here. In particular,
+the lower bound for covers assumes that his \NVarieties{} closed sets are all the
+subsets of laws closed under consequence. Least witness orders beyond 6 are confirmed
+by SAT; the realisation of closed sets at orders 7--9 rests on the completeness of our
+search, checked as described. Mace4 is used only for comparison.
+An OEIS match of six terms of a model-count sequence is not a proof. No result is
+formalised in Lean.
+
+\section*{Data and code}
+\repo{} (Apache-2.0). Le Floch's ancillary files are redistributed under
+\href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0}.
+
+\section*{Use of AI}
+Code, analysis and text were produced with Claude (Anthropic) under the author's
+direction. All numbers are generated by scripts in the repository.
+
+\begin{thebibliography}{9}
+\bibitem{etp} M.~Bolan, J.~Breitner, J.~Brox, et al., \emph{The Equational Theories
+Project: Advancing Collaborative Mathematical Research at Scale}, \arxiv{2512.07087},
+2025.
+\bibitem{highs} Q.~Huangfu and J.~A.~J. Hall, \emph{Parallelizing the dual revised
+simplex method}, Mathematical Programming Computation \textbf{10}(1) (2018),
+119--142, \doi{10.1007/s12532-017-0130-5}.
+\bibitem{lefloch} B.~Le Floch, \emph{Implication semilattice of 990 quasigroup
+equational laws}, \arxiv{2603.29909}, 2026.
+\bibitem{mccune} W.~McCune, \emph{Prover9 and Mace4},
+\url{https://www.cs.unm.edu/~mccune/prover9/}, 2005--2010.
+\bibitem{oeis} OEIS Foundation Inc., \emph{The On-Line Encyclopedia of Integer
+Sequences}, \url{https://oeis.org}.
+\bibitem{schroeder} E.~Schröder, \emph{Vorlesungen über die Algebra der Logik (exakte
+Logik)}, vol.~1, Teubner, Leipzig, 1890.
+\href{https://archive.org/details/bub_gb_P95LAAAAYAAJ}{Scan at archive.org}.
+\end{thebibliography}
+
+\end{document}

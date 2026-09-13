@@ -1,0 +1,5 @@
+cpu	Apple M3 Pro
+logical_cores	11
+memory_bytes	38654705664
+rustc	rustc 1.96.0 (ac68faa20 2026-05-25)
+python	Python 3.14.6

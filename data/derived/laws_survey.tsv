@@ -1,0 +1,14 @@
+laws	990
+op_occurrences	*	1320
+op_occurrences	//	1320
+op_occurrences	\\	1320
+variable_occurrences	x	1980
+variable_occurrences	y	1980
+variable_occurrences	z	1980
+laws_with_distinct_variables	3	990
+laws_with_ops_lhs_rhs	2	2	990
+max_side_depth	2
+distinct_keys_up_to_renaming_and_side_swap	990
+tautologies	0
+lhs_reads_x_y_z_in_order	990
+round_trip_identical_lines	990

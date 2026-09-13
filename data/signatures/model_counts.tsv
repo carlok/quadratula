@@ -1,0 +1,162 @@
+kind	name	order1	order2	order3	order4	order5	order6	order7	order8	order9
+class	Sch-1	1	1	3	7	11	491			
+class	Sch-2	1	1	2	7	10	64			
+class	Sch-3	1	1	1	2	1	1			
+class	Sch-4	1	1	2	6	5	2			
+class	Sch-5	1	1	2	3	4	9	41	595	26620
+class	Sch-6	1	1	3	7	11	491			
+class	Sch-7	1	1	0	1	0	0	0	1	0
+class	Sch-8	1	1	1	2	1	1			
+class	Sch-9	1	1	0	2	3	0			
+class	Sch-10	1	1	0	2	0	0	0	2	0
+class	Sch-12	1	1	3	7	11	491			
+class	Sch-14	1	1	0	3	0	0			
+class	Sch-15	1	1	1	2	1	1			
+class	Sch-18	1	1	3	4	2	5			
+class	Sch-20	1	1	0	2	3	0			
+class	Sch-23	1	1	2	3	4	9	41	595	26623
+class	Sch-24	1	1	2	2	1	3	3	13	12
+class	Sch-25	1	1	0	2	3	0			
+class	Sch-29	1	1	3	6	6	13			
+class	Sch-34	1	1	2	6	5	2			
+class	Sch-38	1	1	0	1	0	0	0	3	
+class	Sch-54	1	1	0	9	22	0			
+class	Sch-56	1	1	2	6	5	2			
+class	Sch-60	1	1	0	3	0	0			
+class	Sch-65	1	1	1	2	1	2			
+class	Sch-79	1	1	0	1	0	0	0	3	
+class	Sch-88	1	1	3	4	2	5			
+class	Sch-93	1	1	3	6	6	13			
+class	Sch-100	1	1	2	7	10	64			
+class	Sch-101	1	1	0	3	0	0			
+class	Sch-102	1	1	0	15	0	0			
+class	Sch-103	1	1	3	6	8	16			
+class	Sch-105	1	1	1	2	1	2			
+class	Sch-123	1	1	1	2	1	2			
+class	Sch-127	1	1	3	6	8	16			
+class	Sch-140	1	1	2	7	10	64			
+class	Sch-156	1	1	3	4	2	5			
+class	Sch-161	1	1	3	6	8	16			
+class	Sch-183	1	1	3	6	6	13			
+class	Sch-202	1	1	0	9	22	0			
+class	Sch-224	1	1	0	9	22	0			
+class	Sch-264	1	1	3	5	5	13			
+class	Sch-336	1	1	3	5	5	13			
+class	Sch-408	1	1	5	17	85	4003			
+class	Sch-432	1	1	5	17	85	4003			
+class	Sch-504	1	1	3	5	5	13			
+class	Sch-654	1	1	5	17	85	4003			
+variety	()	1	1	5	35	1411	1130531			
+variety	(408)	1	1	5	17	85	4003			
+variety	(432)	1	1	5	17	85	4003			
+variety	(654)	1	1	5	17	85	4003			
+variety	(103)	1	1	3	6	8	16			
+variety	(127)	1	1	3	6	8	16			
+variety	(161)	1	1	3	6	8	16			
+variety	(408, 432)	1	1	5	10	8	24			
+variety	(408, 654)	1	1	5	10	8	24			
+variety	(432, 654)	1	1	5	10	8	24			
+variety	(103, 654)	1	1	3	4	4	5			
+variety	(127, 432)	1	1	3	4	4	5			
+variety	(161, 408)	1	1	3	4	4	5			
+variety	(408, 432, 654)	1	1	5	8	4	9			
+variety	(29)	1	1	3	6	6	13			
+variety	(54)	1	1	0	9	22	0			
+variety	(93)	1	1	3	6	6	13			
+variety	(183)	1	1	3	6	6	13			
+variety	(202)	1	1	0	9	22	0			
+variety	(224)	1	1	0	9	22	0			
+variety	(264)	1	1	3	5	5	13			
+variety	(336)	1	1	3	5	5	13			
+variety	(504)	1	1	3	5	5	13			
+variety	(54, 408)	1	1	0	6	5	0			
+variety	(54, 654)	1	1	0	6	5	0			
+variety	(202, 408)	1	1	0	6	5	0			
+variety	(202, 432)	1	1	0	6	5	0			
+variety	(224, 432)	1	1	0	6	5	0			
+variety	(224, 654)	1	1	0	6	5	0			
+variety	(54, 127)	1	1	0	2	0	0	0	3	2
+variety	(54, 408, 654)	1	1	0	4	0	0	0	8	
+variety	(102)	1	1	0	15	0	0			
+variety	(103, 127)	1	1	2	4	4	9	43		
+variety	(103, 202)	1	1	0	2	0	0	0	3	2
+variety	(161, 224)	1	1	0	2	0	0	0	3	2
+variety	(202, 408, 432)	1	1	0	4	0	0	0	8	
+variety	(224, 432, 654)	1	1	0	4	0	0	0	8	
+variety	(4)	1	1	2	6	5	2			
+variety	(34)	1	1	2	6	5	2			
+variety	(54, 202)	1	1	0	6	5	0			
+variety	(54, 224)	1	1	0	6	5	0			
+variety	(56)	1	1	2	6	5	2			
+variety	(202, 224)	1	1	0	6	5	0			
+variety	(2)	1	1	2	7	10	64			
+variety	(4, 408)	1	1	2	4	5	2			
+variety	(34, 432)	1	1	2	4	5	2			
+variety	(54, 202, 408)	1	1	0	4	5	0			
+variety	(54, 224, 654)	1	1	0	4	5	0			
+variety	(56, 654)	1	1	2	4	5	2			
+variety	(100)	1	1	2	7	10	64			
+variety	(140)	1	1	2	7	10	64			
+variety	(202, 224, 432)	1	1	0	4	5	0			
+variety	(54, 102)	1	1	0	9	0	0			
+variety	(102, 202)	1	1	0	9	0	0			
+variety	(102, 224)	1	1	0	9	0	0			
+variety	(4, 224)	1	1	0	2	0	0	0	3	3
+variety	(29, 93)	1	1	2	4	4	9	41		
+variety	(34, 54)	1	1	0	2	0	0	0	3	3
+variety	(54, 202, 224)	1	1	0	4	0	0	0	6	2
+variety	(56, 202)	1	1	0	2	0	0	0	3	3
+variety	(4, 102)	1	1	0	4	0	0	0	7	
+variety	(34, 102)	1	1	0	4	0	0	0	7	
+variety	(54, 102, 202)	1	1	0	6	0	0			
+variety	(54, 102, 224)	1	1	0	6	0	0			
+variety	(56, 102)	1	1	0	4	0	0	0	7	
+variety	(65)	1	1	1	2	1	2			
+variety	(102, 202, 224)	1	1	0	6	0	0			
+variety	(105)	1	1	1	2	1	2			
+variety	(123)	1	1	1	2	1	2			
+variety	(4, 183)	1	1	0	4	0	0	0	4	
+variety	(23)	1	1	2	3	4	9	41	595	26623
+variety	(29, 56)	1	1	0	4	0	0	0	4	
+variety	(34, 93)	1	1	0	4	0	0	0	4	
+variety	(38)	1	1	0	1	0	0	0	3	
+variety	(54, 504)	1	1	0	3	0	0			
+variety	(54, 264)	1	1	0	3	0	0			
+variety	(79)	1	1	0	1	0	0	0	3	
+variety	(102, 336)	1	1	0	3	0	0			
+variety	(2, 54)	1	1	0	2	2	0			
+variety	(2, 56)	1	1	2	4	2	2			
+variety	(4, 100)	1	1	2	4	2	2			
+variety	(34, 140)	1	1	2	4	2	2			
+variety	(54, 100)	1	1	0	2	2	0			
+variety	(127, 140)	1	1	0	2	2	0			
+variety	(4, 29)	1	1	1	4	1	1			
+variety	(4, 56)	1	1	1	4	1	1			
+variety	(34, 56)	1	1	1	4	1	1			
+variety	(4, 102, 224)	1	1	0	2	0	0	0	3	0
+variety	(34, 54, 102)	1	1	0	2	0	0	0	3	0
+variety	(54, 102, 202, 224)	1	1	0	4	0	0	0	6	0
+variety	(56, 102, 202)	1	1	0	2	0	0	0	3	0
+variety	(1)	1	1	3	7	11	491			
+variety	(6)	1	1	3	7	11	491			
+variety	(12)	1	1	3	7	11	491			
+variety	(4, 29, 56)	1	1	0	3	0	0	0	3	
+variety	(88)	1	1	3	4	2	5			
+variety	(156)	1	1	3	4	2	5			
+variety	(18)	1	1	3	4	2	5			
+variety	(60)	1	1	0	3	0	0			
+variety	(14)	1	1	0	3	0	0			
+variety	(101)	1	1	0	3	0	0			
+variety	(5)	1	1	2	3	4	9	41	595	26620
+variety	(25)	1	1	0	2	3	0			
+variety	(9)	1	1	0	2	3	0			
+variety	(20)	1	1	0	2	3	0			
+variety	(25, 54)	1	1	0	2	0	0	0	2	0
+variety	(2, 18)	1	1	0	2	0	0	0	2	0
+variety	(4, 101)	1	1	0	2	0	0	0	2	0
+variety	(3)	1	1	1	2	1	1			
+variety	(8)	1	1	1	2	1	1			
+variety	(15)	1	1	1	2	1	1			
+variety	(10)	1	1	0	2	0	0	0	2	0
+variety	(24)	1	1	2	2	1	3	3	13	12
+variety	(7)	1	1	0	1	0	0	0	1	0

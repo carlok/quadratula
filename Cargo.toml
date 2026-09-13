@@ -1,0 +1,16 @@
+[package]
+name = "quadratula"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "Refutation floor of Schröder's 990 quasigroup laws: exhaustive small-quasigroup signatures"
+
+[dependencies]
+flate2 = "1"
+rayon = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+debug = true
