@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # rustup picks up the toolchain pinned in rust-toolchain.toml.
+      # Debug build: the unit and gate tests are small, and skipping the
+      # release profile (LTO) keeps the job fast.
+      - run: cargo test --locked
+      - uses: astral-sh/setup-uv@v6
+      # Python gates over the committed data; uv honours .python-version.
+      - run: uv run --frozen pytest -q tests/test_gates.py
